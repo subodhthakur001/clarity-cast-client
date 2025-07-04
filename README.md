@@ -1,12 +1,48 @@
-# React + Vite
+# ClarityCast Client 🎥
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**ClarityCast** is the frontend application for a modern, production-ready video recording and communication platform — inspired by tools like **Riverside.fm**. Unlike basic WebRTC peer-to-peer examples, ClarityCast is built to support high-quality video streaming with a scalable signaling and recording pipeline.
 
-Currently, two official plugins are available:
+This React-based client connects to a WebSocket signaling server and establishes a WebRTC connection between the **sender** (broadcaster) and the **receiver** (viewer/recorder).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🎯 Project Goal
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To build a fully featured, Riverside.fm-style platform enabling:
+- Studio-quality video/audio recording
+- Multi-user remote collaboration
+- Cloud-based file storage
+- Scalable architecture for production use
+
+---
+
+## 🔍 Features
+
+- 🚀 Sender and Receiver roles via URL routes
+- 🔄 WebSocket-based signaling
+- 📡 WebRTC-based real-time video transmission
+- ✅ Stream display via React refs
+- 💎 Responsive layout with centered video playback
+
+---
+
+## 🧱 Tech Stack
+
+- React (with Hooks)
+- WebRTC
+- WebSocket
+- JavaScript (ES6+)
+- HTML5 Video API
+
+---
+
+## 📁 Project Structure
+
+```bash
+clarity-cast-client/
+├── src/components
+│   ├── Sender.jsx         # Capture and stream video
+│   ├── Receiver.jsx       # Receive and render stream
+│   └── App.jsx
+├── public/
+└── README.md
