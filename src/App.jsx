@@ -11,7 +11,7 @@ const App = () => {
     if (roomName && userName) {
       setStartCall(true);
     } else {
-      alert("Enter both room name and user name");
+      alert("Please enter both room name and user name");
     }
   };
 
